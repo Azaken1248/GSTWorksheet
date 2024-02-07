@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GST Quiz</title>
+    <link rel = "stylesheet" href = "GSTQuiz.css">
+    <script src = "GSTQuiz.js"></script>
+</head>
+<body>
+    <h1 class="main-header">Goods And Service Tax Quiz</h1>
+    <div class="question-box">
+        <div class="question-number">Question 1</div>
+        <div class="question">
+            A shopkeeper bought a washing machine at a discount of 20% from a wholesaler, the printed price of the washing machine being ₹18000. The shopkeeper sells it to a consumer at a discount of 10% on the printed price.
+            If the sales are intra-state and the rate of GST is 12%, find:<br>
+            i.   the price inclusive of tax (under GST) at which the shopkeeper bought the machine<br>
+            ii.  the price which the consumer pays for the machine.<br>
+            iii. the tax (under GST) paid by the wholesaler to the State Government<br>
+            iv.  the tax (under GST) paid by the shopkeeper to the State Government<br>
+            v.   the tax (under GST) received by the Central Government.
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q1-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q1-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iii</span>
+        <input id = "q1-3" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iv</span>
+        <input id = "q1-4" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">v</span>
+        <input id = "q1-5" type="text" placeholder="Answer" class="textfield">  
+        <input type="submit" class="submit-button" onclick="validateAnswers('q1-1',16128); validateAnswers('q1-2',18144); validateAnswers('q1-3',864); validateAnswers('q1-4',108); validateAnswers('q1-5',972);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 2</div>
+        <div class="question">
+            The marked price of an article is 12500. A dealer in Kolkata sells the article to a consumer in the same city at a profit of 8%. If the rate of GST is 18%, find<br>
+            i.the selling price (excluding tax) of the article.<br>
+            ii.IGST, CGST and SGST paid by the dealer to the Central and State Governments.<br>
+            iii.the amount which the consumer pays for the article.
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q2-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q2-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iii</span>
+        <input id = "q2-3" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q2-1',13500); validateAnswers('q2-2',1215); validateAnswers('q2-3',15930);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 3</div>
+        <div class="question">
+            A manufacturer buys raw material worth 7500 paying GST at the rate of 5%. He sells the finished product to a dealer at 40% profit. If the purchase and the sale both are intra-state and the rate of GST for the finished product is 12%, find:
+            <br>
+            i.the input tax (under GST) paid by the manufacturer.<br>
+            ii.the output tax (under GST) collected by the manufacturer.<br>
+            iii.the tax (under GST) paid by the manufacturer to the Central and State Goverments.<br>
+            iv.the amount paid by the dealer for the finished product<br>
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q3-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q3-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iii</span>
+        <input id = "q3-3" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iv</span>
+        <input id = "q3-4" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q3-1',375); validateAnswers('q3-2',630); validateAnswers('q3-3',442.50); validateAnswers('q3-4',11760);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 4</div>
+        <div class="question">
+            A dealer buys an article at a discount of 30% from the wholesaler, the marked price being ₹6000. The dealer sells it to a consumer at a discount of 10% on the marked price. If the sales are intra-state and the rate of GST is 5%, find:
+            <br>
+            i.the amount paid by the consumer for the article.<br>
+            ii.the tax (under GST) paid by the dealer to the State Government.<br>
+            iii.the amount of tax (under GST) received by the Central Government.<br>
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id= "q4-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id= "q4-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">iii</span>
+        <input id= "q4-3" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q4-1',5670); validateAnswers('q4-2',30); validateAnswers('q4-3',135);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 5</div>
+        <div class="question">
+            A shopkeeper buys an article from a wholesaler for ₹ 20000 and sells it to consumer at 10% profit. If the rate of GST is 12%, find the tax liability of the shopkeeper.
+        </div>
+        <input id="q5-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q5-1',240)">
+    </div>
+</body>
+</html>
