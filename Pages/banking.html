@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banking Quiz</title>
+    <link rel = "stylesheet" href = "../styles/banking.css">
+    <script src = "../index.js"></script>
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html">Back</a>
+    </div>
+    <h1 class="main-header">Banking Quiz</h1>
+    <div class="question-box">
+        <div class="question-number">Question 1</div>
+        <div class="question">
+            <strong>Mr. Jacob has a two years recurring deposit<br>
+                account in State Bank of India and deposits
+                <code>1500 per month. If he receives</code>
+                ₹37,875 at the time of<br>
+                maturity, find the rate of interest.
+            </strong>
+        </div>
+        <input id = "q1-1" type="text" placeholder="Answer" class="textfield">  
+        <input type="submit" class="submit-button" onclick="validateAnswers('q1-1',5);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 2</div>
+        <div class="question">
+            <strong>Mohan has a recurring deposit account in a bank for 2 years at 6% p.a. simple interest. If he gets<br>
+                ₹ 1200 as interest at the time of maturity, find :<br>
+                (i) the monthly instalment<br>
+                (ii) the amount of maturity</strong>
+            iii.the amount which the consumer pays for the article.
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q2-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q2-2" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q2-1',800); validateAnswers('q2-2',20400);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 3</div>
+        <div class="question">
+            <strong>Shahrukh opened a recurring deposit account in&nbsp;a bank and deposit&nbsp;8,00 per month for 1 (1 / 2) years. If he received ₹15,084 at the time of maturity, find&nbsp;the rate of interest per annum.</strong>
+        </div>
+        <input id = "q3-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q3-1',6);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 4</div>
+        <div class="question">
+            <strong>Mr. Britto deposits a certain sum of money each&nbsp;month in a recurring deposit account of a bank.<br>If the rate of interest is of 8% per annum and Mr.&nbsp;Britto gets&nbsp;₹ 8,088 from the bank after 3 years, find&nbsp;the value of his monthly instalment.</strong>
+        </div>
+        <input id= "q4-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q4-1',200);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 5</div>
+        <div class="question">
+            <strong>Kiran deposited Rs. 200 for 36 months in a bank&nbsp;recurring deposit account. If the bank pays interest<br>at the rate of 11% per annum, find the amount she&nbsp;gets on maturity.&nbsp;</strong>
+        </div>
+        <input id="q5-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q5-1',8421)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 6</div>
+        <div class="question">
+            <strong>Question;&nbsp;Ahmad has a recurring deposit account in a bank.<br>
+                He deposit&nbsp;₹ 2,500 per month for 2 years. If he gets&nbsp;₹&nbsp;66,250 at the time of maturity, find<br>
+                (i) the interest paid by the bank<br>
+                (ii) the rate of interest&nbsp;</strong>
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q6-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q6-2" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q6-1',6250); validateAnswers('q6-2',10);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 7</div>
+        <div class="question">
+            <strong>Sonia had a recurring deposit account in a bank and deposited ₹600 per month for 2½ 
+                years. If the rate of interest was 10% p.a., find the maturity value of this account. <br><br>ICSE-[2018]</strong>
+        </div>
+        <input id="q7-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q7-1',20325)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 8</div>
+        <div class="question">
+            <strong>Priyanka has a recurring deposit account of ₹1000 per month at 10% per annum. If 
+                she gets ₹5550 as interest at the time of maturity, find the total time(in years) for which the 
+                account was held. <br><br>ICSE-[2018]</strong>
+        </div>
+        <input id="q8-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q8-1',3)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 9</div>
+        <div class="question">
+            <strong>Rekha opened a recurring deposit account for 20 months. The rate of interest is 9% 
+                per annum and Rekha receives ₹ 441 as interest at the time of maturity. 
+                Find the amount Rekha deposited each month. <br><br>ICSE-[2019]</strong>
+        </div>
+        <input id="q9-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q9-1',280)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 10</div>
+        <div class="question">
+            <strong>Mr.Sonu has a recurring deposit account and deposits ₹ 750 per month for 2 years.
+                If he gets ₹ 19125 at the time of maturity, find the rate of interest. <br><br>ICSE-[2020]</strong>
+        </div>
+        <input id="q10-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q10-1',6)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 11</div>
+        <div class="question">
+            <strong> Naveen deposits ₹ 800 every month in a recurring deposit account for 6 months. If 
+                he receives ₹ 4884 at the time of maturity, then the interest he earns is:  <br><br>ICSE-[2023]</strong>
+        </div>
+        <input id="q11-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q11-1',84)">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 12</div>
+        <div class="question">
+            <strong>Salman deposits ₹ 1000 every month in a recurring deposit account for 2 years. If 
+                he receives ₹ 26000 on maturity, find:<br>
+                (i) the total interest Salman earns.<br>
+                (ii) the rate of interest.<br><br>ICSE-[2023]</strong>
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q12-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q12-2" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q12-1',2000); validateAnswers('q12-2',8);">
+    </div>
+</body>
+</html>
