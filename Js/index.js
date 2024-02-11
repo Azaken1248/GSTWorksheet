@@ -1,5 +1,5 @@
 function sendDataToServer(data) {
-  fetch('http://localhost:3000/storedata', {
+  fetch('http://16.171.195.12:3000/storedata', {
       method: 'POST',
       headers: {
           'Content-Type': 'application/json',
