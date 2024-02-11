@@ -5,12 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Banking Quiz</title>
     <link rel = "stylesheet" href = "../styles/banking.css">
-    <script src = "../index.js"></script>
+    <script src="../Js/index.js"></script>
+   
+
 </head>
 <body>
     <div class="back-button">
         <a href="../index.html">Back</a>
     </div>
+    <div id="timer" class="timer" title="Click To Pause">
+        00:00:00
+    </div>   
     <h1 class="main-header">Banking Quiz</h1>
     <div class="question-box">
         <div class="question-number">Question 1</div>
@@ -139,5 +144,6 @@
         <input id = "q12-2" type="text" placeholder="Answer" class="textfield">
         <input type="submit" class="submit-button" onclick="validateAnswers('q12-1',2000); validateAnswers('q12-2',8);">
     </div>
+    <script src = "../Js/index.js"></script>
 </body>
 </html>

@@ -33,6 +33,20 @@ body{
     text-decoration: underline;
 }
 
+.timer{
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 0.4em;
+    font-size: 20px;
+    margin-top: 2em;
+    margin-left: 80%;
+}
+.timer:hover{
+    border: 2px solid red;
+}
+
+
 .question-box{
     border: 3px solid white;
     border-radius: 5px;
