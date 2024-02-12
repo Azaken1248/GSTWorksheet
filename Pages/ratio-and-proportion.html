@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ratio And Proportion</title>
+    <link rel = "stylesheet" href = "../styles/ratio-and-proportion.css">
+    <script src="../Js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html">Back</a>
+    </div>
+    <div id="timer" class="timer" title="Click To Pause">
+        00:00:00
+    </div>   
+    <h1 class="main-header">Ratio And proportion</h1>
+    <h3 style="color: white; font-style: italic; margin: 2%;">*note: If the answer is a fraction or a fraction like \(\frac{5}{8}\) or a ratio like 5 : 8 write it in the answer box as a decimal like 0.625 (which is \(\frac{5}{8}\))  </h3>
+    <div class="question-box">
+        <div class="question-number">Question 1</div>
+        <div class="question">
+            <strong> If b is the mean proportion between a and c, show that:<br><br>
+                <p style="font-size: 30px;">\( \frac{a^{4}+a^{2}b^{2}+b^{4}}{b^{4}+b^{2}c^{2}+c^{4}} \) = \( \frac{a^2}{c^2} \)</p><br>
+                ICSE-[2017]
+            </strong>
+        </div>
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 2</div>
+        <div class="question">
+            <strong>If <span style="font-size: 1.4rem;">\( \frac{7m+2n}{7m-2n} \) = \( \frac{5}{3} \)</span><br><br>
+                 (i) m : n<br><br>
+                (ii) <span style="font-size: 1.4rem;">\( \frac{m^{2}+n^{2}}{m^{2}-n^{2}} \)</span><br><br>
+                ICSE-[2017]</strong>
+            
+        </div>
+        <span style="color: white; font-size: 20px;">i</span>
+        <input id = "q2-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">ii</span>
+        <input id = "q2-2" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q2-1',1.14); validateAnswers('q2-2',7.53);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 3</div>
+        <div class="question">
+            <strong>Using properties of proportion, solve for x. Given that x is positive:<br><br>
+                <span style="font-size: 1.4rem;">\( \frac{2x + \sqrt(4x^2 - 1)}{2x - \sqrt(4x^2 - 1)} \) = \(4\)</span><br><br>
+            ICSE-[2018]
+            </strong>
+        </div>
+        <input id = "q3-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q3-1',0.625);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 4</div>
+        <div class="question">
+            <strong>Using properties of proportion solve for x, given:<br><br>
+                <span style="font-size: 1.4rem;">\( \frac{\sqrt(5x)+\sqrt(2x - 6)}{\sqrt(5x)-\sqrt(2x - 6)} \) = \(4\)</span><br><br>
+                ICSE-[2019]
+            </strong>
+        </div>
+        <input id = "q4-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q4-1',2.77);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 5</div>
+        <div class="question">
+            <strong>Using properties of proportion find 𝑥 ∶ 𝑦 , given:<br><br>
+                <span style="font-size: 1.4rem;">\( \frac{x^2 + 2x}{2x + 4} \) = \( \frac{y^2+3y}{3y + 9} \)</span><br><br>
+                ICSE-[2020]    
+            </strong>
+        </div>
+        <input id = "q5-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q5-1',0.66);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 6</div>
+        <div class="question">
+            <strong>If x =<span style="font-size: 1.4rem;">\( \frac{\sqrt(2a + 1)+\sqrt(2a - 1)}{\sqrt(2a + 1)-\sqrt(2a - 1)} \)</span>prove that <span style="font-size: 1.4rem;">\(x^2 - 4ax + 1 \) = 0</span><br><br>
+                ICSE-[2020]
+            </strong>
+        </div>
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 7</div>
+        <div class="question">
+            <strong>
+                Using Componendo and Dividendo solve for x:<br><br>
+                <span style="font-size: 1.4rem;">\( \frac{\sqrt(2x + 2)+\sqrt(2x - 1)}{\sqrt(2x + 2)-\sqrt(2x - 1)} = 3 \)</span><br><br>
+                ICSE-[2023]
+            </strong>
+        </div>
+        <input id="q7-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q7-1',1);">
+    </div>
+    <script src = "../Js/index.js"></script>
+</body>
+</html>
