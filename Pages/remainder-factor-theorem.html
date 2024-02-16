@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Remainder And Factor Theorem</title>
+    <link rel = "stylesheet" href = "../styles/questions-global.css">
+    <link rel="icon" href="../Assets/favicon.ico" type="image/x-icon" />
+    <script src="../Js/index.js"></script>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+
+   
+
+</head>
+<body>
+    <div class="back-button">
+        <a href="../index.html">Back</a>
+    </div>
+    <div id="timer" class="timer" title="Click To Pause">
+        00:00:00
+    </div>   
+    <h1 class="main-header">Remainder And Factor Theorem</h1>
+    <div class="question-box">
+        <div class="question-number">Question 1</div>
+        <div class="question">
+            <strong>\( \ x^2+ax^2+bx+6 \) has \(\ (x-2) \) as a factor and leaves a remainder of 3 when divided by \(\ (x-3) \), find the value of a and b.<br><br>
+                ICSE-[2005]</strong>
+        </div>
+        <span style="color: white; font-size: 20px;">a value</span>
+        <input id = "q1-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">b value</span>
+        <input id = "q1-2" type="text" placeholder="Answer" class="textfield">   
+        <input type="submit" class="submit-button" onclick="validateAnswers('q1-1',-3); validateAnswers('q1-2',-1);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 2</div>
+        <div class="question">
+            <strong>If \(\ (x-2) \) is a factor of the expression \( \ 2x^3+ax^2+bx-14 \) and when the expression is divided by \(\ (x-3) \), it leaves a remainder 52.Find value of a and b.<br><br>
+                ICSE-[2013]</strong>
+            
+        </div>
+        <span style="color: white; font-size: 20px;">a value</span>
+        <input id = "q2-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">b value</span>
+        <input id = "q2-2" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q2-1',5); validateAnswers('q2-2',-11);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 3</div>
+        <div class="question">
+            <strong>Find the value of a, if \(\ (x-a) \) is a factor of \(\ x^3-ax^2+x+2\)<br><br>
+            ICSE-[2003]
+            </strong>
+        </div>
+        <input id = "q3-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q3-1',2);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 4</div>
+        <div class="question">
+            <strong>Using remainder theorem, factorize \(\ x^3+10x^2-37x+26 \) completely.<br><br>
+                ICSE-[2014]    
+            </strong>
+        </div>
+        <span style="color: white; font-size: 20px;">First root(smallest root)</span>
+        <input id = "q4-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">Second root(middle root)</span>
+        <input id = "q4-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">Third root(largest root)</span>
+        <input id = "q4-3" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q4-1',-13); validateAnswers('q4-2',1); validateAnswers('q4-3',2);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 5</div>
+        <div class="question">
+            <strong>When divided by \(\ (x-3) \) the polynomials \(\ x^3-px^2+x+6 \) and \(\ 2x^3-x^2-(p+3)x-6 \) leaves the same remainder.Find the value of p.<br><br>
+                ICSE-[2010]    
+            </strong>
+        </div>
+    
+        <input id="q5-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q5-1',1);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 6</div>
+        <div class="question">
+            <strong>use the remainder theorem to factorize the following expression: \(\ 2x^3+x^2-13x+6 \)<br><br>
+                ICSE-[2010]
+            </strong>
+        </div>
+        <span style="color: white; font-size: 20px;">First root(smallest root) </span>
+        <input id = "q6-1" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">Second root(middle root)</span>
+        <input id = "q6-2" type="text" placeholder="Answer" class="textfield">
+        <span style="color: white; font-size: 20px;">Third root(largest root)</span>
+        <input id = "q6-3" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button" onclick="validateAnswers('q6-1',-3); validateAnswers('q6-2',0.5); validateAnswers('q6-3',2);">
+    </div>
+    <div class="question-box">
+        <div class="question-number">Question 7</div>
+        <div class="question">
+            <strong>
+                Find the value of k if \(\ (x-2) \) is a factor of \(\ x^3+2x^2-kx+10 \).Hence determine whether \(\ (x+5) \) is also a factor.<br><br>
+                ICSE-[2011]
+            </strong>
+        </div>
+        <input id="q7-1" type="text" placeholder="Answer" class="textfield">
+        <input type="submit" class="submit-button", onclick="validateAnswers('q7-1',13);">
+    </div>
+    <script src = "../Js/index.js"></script>
+</body>
+</html>
